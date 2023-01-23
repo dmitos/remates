@@ -1,0 +1,31 @@
+{% extends './layout.html' %}
+
+{% block title %}clientes{% endblock %}
+
+{% block body%}
+<div class="container col-4 col-sm-12">
+    <form id="cliente" method="POST" action="/Insertar_Clientes">
+      <div class="mb-3">
+	  <label for="nombre" class="form-label">Nombre</label>
+	  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre...">
+      </div>
+      <div class="mb-3">
+	  <label for="direccion" class="form-label">Direccion</label>
+	  <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion...">
+      </div>
+      <div class="mb-3">
+	  <label for="telefono" class="form-label">Telefono</label>
+	  <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Telefono...">
+      </div>
+      <div class="mb-3">
+	  <label for="mail" class="form-label">E-mail</label>
+	  <input type="email" class="form-control" id="mail" name="mail" placeholder="E-mail@mail.com">
+      </div>
+      <div class="col-4">
+	  <button type="submit" class="btn btn-primary">AGREGAR</button>
+      </div>
+    </form>
+</div>
+
+{% endblock %}
+
