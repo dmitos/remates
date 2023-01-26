@@ -4,16 +4,14 @@
 
 {% block body%}
 <div class="container col-4 col-sm-12">
-    <form id="cliente" method="POST" action="/Insertar_Clientes" class="needs-validation" novalidate>
+    <form id="cliente" method="POST" action="/Insertar_Clientes">
       <div class="mb-3">
-	  <label for="validationCustomName" class="form-label">Nombre</label>
-	  <input type="text" class="form-control" id="validationCustomName" name="nombre" placeholder="Nombre..." required>
-	  <div class="valid-feedback">bien ahi</div>
+	  <label for="nombre" class="form-label">Nombre</label>
+	  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre...">
       </div>
       <div class="mb-3">
 	  <label for="direccion" class="form-label">Direccion</label>
-	  <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion..." required>
-	  <div class="invalid-feedback">mal ahi</div>
+	  <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Direccion...">
       </div>
       <div class="mb-3">
 	  <label for="telefono" class="form-label">Telefono</label>
