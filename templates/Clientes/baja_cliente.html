@@ -1,0 +1,24 @@
+{% extends './layout.html' %}
+
+{% block title %}clientes{% endblock %}
+
+{% block body%}
+<div class="container col-md-4 col-sm-12">
+  <div class="card-header">Bajar Cliente
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Cliente 001</h5>
+    <p class="card-text">Confirmar el borrado del ciente</p>
+    <form id="cliente" method="POST" action="/Borrar_Cliente" class="row g-3">
+      <div class="col-4">
+	<button type="submit" class="btn btn-danger">Borrar</button>
+      </div>
+      <div class="col-4">
+	<a href="/Clientes" class="btn btn-primary">Cancelar</a>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
+

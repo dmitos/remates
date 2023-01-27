@@ -1,0 +1,54 @@
+{% extends './layout.html' %}
+
+{% block title %}clientes{% endblock %}
+
+{% block body%}
+<div class="container col-md-4 col-sm-12">
+  <div class="card mt-1">
+    <div class="card-body">
+          <h5 class="card-title">Altar Cliente</h5>
+
+    <form id="cliente" method="POST" action="/Insertar_Clientes" class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+	  <label for="Documento" class="form-label">Documento</label>
+	  <input type="text" class="form-control" id="Documento" name="documento" placeholder="Doc...">
+      </div>
+      <div class="col-md-6">
+	  <label for="Nombre" class="form-label">Nombre</label>
+	  <input type="text" class="form-control" id="Nombre" name="nombre" placeholder="Nombre..." required>
+	  <div class="invalid-feedback">Campo nombre obligatorio</div>
+      </div>
+      <div class="col-md-6">
+	  <label for="Telefono" class="form-label">Telefono</label>
+	  <input type="text" class="form-control" id="Telefono" name="telefono" placeholder="Telefono..." required>
+	  <div class="invalid-feedback">Campo telefono obligatorio</div>
+      </div>
+            <div class="col-md-6">
+	  <label for="Email" class="form-label">Email</label>
+	  <input type="mail" class="form-control" id="Email" name="mail" placeholder="Email...">
+	    </div>
+	          <div class="col-md-8">
+	  <label for="Direccion" class="form-label">Direccion</label>
+	  <input type="text" class="form-control" id="Direccion" name="direccion" placeholder="Direccion..." required>
+	  <div class="invalid-feedback">Campo Direccion obligatorio</div>
+		  </div>
+		    <div class="col-md-4">
+    <label for="Departamento" class="form-label">Departamento</label>
+    <select id="Departamento" class="form-select">
+      <option selected>Elegir...</option>
+      <option>Montevideo</option>
+      <option>Canelones</option>
+      <option>...</option>
+    </select>
+  </div>
+
+      <div class="col-4">
+	  <button type="submit" class="btn btn-primary">AGREGAR</button>
+      </div>
+    </form>
+    </div>
+    </div>
+</div>
+
+{% endblock %}
+
