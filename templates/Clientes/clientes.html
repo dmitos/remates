@@ -15,60 +15,31 @@
 	<thead class="table-dark">
 	      <tr>
 		<th>Id</th>
-		<th><i class="icofont-ui-user icofont-2x"></i> Nombre</th>
-		<th><i class="icofont-email icofont-2x"></i> Mail</th>
-		<th><i class="icofont-smart-phone icofont-2x"></i> Telefono</th>
-		<th><i class="icofont-direction-sign icofont-2x"></i> Direccion</th>
-		<th><i class="icofont-building-alt"></i> Departamento</th>
-		<th><i class="icofont-card"></i> Documento</th>
-		<th><i class="icofont-tools icofont-2x"></i> Accion</th>
+		<th>Doc</th>
+		<th>Nombre</th>
+		<th>Mail</th>
+		<th>Telefono</th>
+		<th>Direccion</th>
+		<th>Departamento</th>
+		<th>Accion</th>
 	      </tr>
 	</thead>
-	      <!-- {% for cliente in clientes%} -->
+	      {% for cliente in clientes%}
 	      <tr>
-		<!-- <td>{{cliente[0]}}</td> -->
-		<td>01</td>
-		<td>Cliente 01</td>
-		<td>Mail Cliente 01</td>
-		<td>Telef Cliente 01</td>
-		<td>Direcc Cliente 01</td>
-		<td>Departamento Cliente 01</td>
-		<td>Doc Cliente 01</td>
+		<td>{{cliente[0]}}</td>
+		<td>{{cliente[1]}}</td>
+		<td>{{cliente[2]}}</td>
+		<td>{{cliente[3]}}</td>
+		<td>{{cliente[4]}}</td>
+		<td>{{cliente[5]}}</td>
+		<td>{{cliente[6]}}</td>
 		<td>
 <a href="/Perfil_Cliente" class="btn btn-primary btn-sm"><i class="icofont-contacts icofont-2x"></i></i></a>
 <a href="" class="btn btn-primary btn-sm"><i class="icofont-ui-edit icofont-2x"></i></a>
-<a href="/Baja_Cliente" class="btn btn-danger btn-sm"><i class="icofont-trash icofont-2x"></i></a>
+<a href="/Baja_Cliente/{{cliente[0]}}" class="btn btn-danger btn-sm"><i class="icofont-trash icofont-2x"></i></a>
 </td>
 	      </tr>
-	      <!-- {% endfor %} -->
-	      <tr>
-		<td>02</td>
-		<td>Cliente 02</td>
-		<td>Mail Cliente 02</td>
-		<td>Telef Cliente 02</td>
-		<td>Direcc Cliente 02</td>
-		<td>Departamento Cliente 02</td>
-		<td>Doc Cliente 02</td>
-		<td>
-<a href="/Perfil_Cliente" class="btn btn-primary btn-sm"><i class="icofont-contacts icofont-2x"></i></i></a>
-<a href="" class="btn btn-primary btn-sm"><i class="icofont-ui-edit icofont-2x"></i></a>
-<a href="/Baja_Cliente" class="btn btn-danger btn-sm"><i class="icofont-trash icofont-2x"></i></a>
-</td>
-</tr>
-	      <tr>
-		<td>03</td>
-		<td>Cliente 03</td>
-		<td>Mail Cliente 03</td>
-		<td>Telef Cliente 03</td>
-		<td>Direcc Cliente 03</td>
-		<td>Departamento Cliente 03</td>
-		<td>Doc Cliente 03</td>
-		<td>
-<a href="/Perfil_Cliente" class="btn btn-primary btn-sm"><i class="icofont-contacts icofont-2x"></i></i></a>
-<a href="" class="btn btn-primary btn-sm"><i class="icofont-ui-edit icofont-2x"></i></a>
-<a href="/Baja_Cliente" class="btn btn-danger btn-sm"><i class="icofont-trash icofont-2x"></i></a>
-</td>
-	      </tr>
+	      {% endfor %}
 </table>
 </div>
     </div>

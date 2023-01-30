@@ -7,9 +7,10 @@
   <div class="card-header">Bajar Cliente
   </div>
   <div class="card-body">
-    <h5 class="card-title">Cliente 001</h5>
-    <p class="card-text">Confirmar el borrado del ciente</p>
+    <h5 class="card-title">{{cliente[0][1]}}</h5>
+    <p class="card-text">Confirmar el borrado del cliente</p>
     <form id="cliente" method="POST" action="/Borrar_Cliente" class="row g-3">
+      <input type="hidden" name="id" value="{{cliente[0][0]}}">
       <div class="col-4">
 	<button type="submit" class="btn btn-danger">Borrar</button>
       </div>
